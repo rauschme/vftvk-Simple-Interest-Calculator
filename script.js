@@ -6,10 +6,8 @@ function compute()
     var years = document.getElementById("years").value;
     var interest = principal * years * rate /100;
     var year = new Date().getFullYear()+parseInt(years);
-    
 }
  
 function showVal(newVal){
     document.getElementById("rate_val").innerHTML=newVal;
 }
-        
