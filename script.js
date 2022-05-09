@@ -1,31 +1,40 @@
 function compute()
 {
     p = document.getElementById("principal").value;
+    
+    //initialize variables
     var principal = document.getElementById("principal").value;
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
+    
+    //SI Calculation formula
     var interest = principal * years * rate /100;
+    
+    //Getting current year from data functon and adding numer of years as Integer
     var year = new Date().getFullYear()+parseInt(years);
-    var result = document.getElementById("result")
-        result.innerHTML="If you deposit <mark>"+principal+"</mark>,\<br\>at an interest rate of <mark>"+rate+"%</mark>\<br\>You will receive an amount of <mark>"+amount+"</mark>,\<br\>in the year <mark>"+year+"</mark>\<br\>"
+    
+    //Check condition for valid number in input field principal
+    if(principal == undefined || principal <=0)
+    {
+        alert ("Enter a Positive Number");
+        document.getElementById("prinicipal).focus();
+                                
+        return
+    }
+    
+    else
+    {
+        //Display result in span result section with highlighting
+        var Ftext = "For deposit amount of <mark>" + principal +",</mark><br>";
+        var Stext = "at an interest rate of <mark>" + rate +" %.</mark><br>";
+        var Ttext = "You will receive an amount of <mark>" + interest + ", </mark>,<br>";
+        var Fotext = "in the year <mark>"+year +"</mark>";
+   
+        document.getElementById("result").innerHTML=Ftext+Stext+Ttext+Fotext       
+    }
 }
  
-function showVal(newVal){
-    document.getElementById("rate_val").innerHTML=newVal;
-}
-
-function checkdata(){
-    var princ = document.getElementById("principal");
-    
-    if (princ.value == ""){
-        alert("Please enter a positive number");
-        princ.focus();
-        return false;
-    }
-    if (pinc.value < 0){
-        alert("Please enter a positive number");
-        princ.focus();
-        return false;
-    }
-    return true
+function UpdateRate(){
+    var ratevalue = document.getElementById("rate).value
+    document.getElementById("rate_val").innerText=ratevalue;
 }
