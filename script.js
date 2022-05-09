@@ -13,3 +13,19 @@ function compute()
 function showVal(newVal){
     document.getElementById("rate_val").innerHTML=newVal;
 }
+
+function checkdata(){
+    var princ = document.getElementById("principal");
+    
+    if (princ.value == ""){
+        alert("Please enter a positive number");
+        princ.focus();
+        return false;
+    }
+    if (pinc.value < 0){
+        alert("Please enter a positive number");
+        princ.focus();
+        return false;
+    }
+    return true
+}
