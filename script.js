@@ -26,7 +26,7 @@ function compute()
         //Display result in span result section with highlighting
         var Ftext = "For deposit amount of <mark>" + principal +",</mark><br>";
         var Stext = "at an interest rate of <mark>" + rate +" %.</mark><br>";
-        var Ttext = "You will receive an amount of <mark>" + interest + ", </mark>,<br>";
+        var Ttext = "You will receive an amount of <mark>" + interest + ", </mark><br>";
         var Fotext = "in the year <mark>"+year +"</mark>";
    
         document.getElementById("result").innerHTML=Ftext+Stext+Ttext+Fotext       
