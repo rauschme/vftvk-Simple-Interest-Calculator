@@ -32,7 +32,7 @@ function compute()
         document.getElementById("result").innerHTML=Ftext+Stext+Ttext+Fotext       
     }
 }
- 
+
 function UpdateRate(){
     var ratevalue = document.getElementById("rate").value
     document.getElementById("rate_val").innerText=ratevalue;
