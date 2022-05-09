@@ -9,9 +9,7 @@ function compute()
 
 }
  
-function updateRate() 
-{
-    var rateval = document.getElementById("rate").value;
-    document.getElementById("rate_val").innerText=rateval;
+function showVal(newVal){
+    document.getElementById("valBox").innerHTML=newVal;
 }
         
