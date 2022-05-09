@@ -38,6 +38,3 @@ function UpdateRate(){
     document.getElementById("rate_val").innerText=ratevalue;
 }
 
-function ClearCalculator(){
-    document.getElementById('principal').value = "";
-}
