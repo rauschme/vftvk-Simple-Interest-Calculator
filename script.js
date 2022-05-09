@@ -10,6 +10,6 @@ function compute()
 }
  
 function showVal(newVal){
-    document.getElementById("rate").innerHTML=newVal;
+    document.getElementById("valBox").innerHTML=newVal;
 }
         
