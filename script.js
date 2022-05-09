@@ -17,7 +17,7 @@ function compute()
     if(principal == undefined || principal <=0)
     {
         alert ("Enter a Positive Number");
-        document.getElementById("prinicipal).focus();
+        document.getElementById("prinicipal").focus();
                                 
         return
     }
