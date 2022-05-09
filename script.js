@@ -37,3 +37,9 @@ function UpdateRate(){
     var ratevalue = document.getElementById("rate").value
     document.getElementById("rate_val").innerText=ratevalue;
 }
+
+function ClearCalculator(){
+    document.getElementById("principal").value="";
+    document.getElementById("rate").value=10.25;
+    document.getElementById("years").value="";
+}
